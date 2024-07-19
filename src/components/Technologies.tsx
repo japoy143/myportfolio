@@ -18,11 +18,12 @@ function Technologies() {
       <div className="flex-wrap text-lg sm:text-xl lg:flex lg:justify-between lg:text-2xl">
         <div className="p-2 sm:p-6 lg:p-12">
           <span>Web</span>
-          <div className="mt-4 flex flex-wrap">
+          <div className="mt-4 flex cursor-pointer flex-wrap">
             {webIcons.map((icon, index) => (
               <ul key={index} className="px-2 py-4">
-                <li className="opacity-50 duration-300 hover:opacity-100">
-                  {icon}
+                <li className="flex flex-col items-center text-center text-xs opacity-50 duration-300 hover:opacity-100 sm:text-sm lg:text-base">
+                  <div> {icon.icon}</div>
+                  <p> {icon.techName}</p>
                 </li>
               </ul>
             ))}
@@ -30,11 +31,12 @@ function Technologies() {
         </div>
         <div className="p-2 sm:p-6 lg:p-12">
           <span>Design Tools</span>
-          <div className="mt-4 flex flex-wrap">
+          <div className="mt-4 flex cursor-pointer flex-wrap">
             {designToolsIcon.map((icon, index) => (
               <ul key={index} className="px-2 py-4">
-                <li className="opacity-50 duration-300 hover:opacity-100">
-                  {icon}
+                <li className="flex flex-col items-center text-center text-xs opacity-50 duration-300 hover:opacity-100 sm:text-sm lg:text-base">
+                  <div> {icon.icon}</div>
+                  <p> {icon.techName}</p>
                 </li>
               </ul>
             ))}
@@ -44,21 +46,23 @@ function Technologies() {
       <div className="flex-wrap text-lg sm:text-xl lg:flex lg:justify-between lg:text-2xl">
         <div className="p-2 sm:p-6 lg:p-12">
           <span>Mobile</span>
-          <div className="mt-4 flex flex-wrap">
+          <div className="mt-4 flex cursor-pointer flex-wrap">
             {mobileIcons.map((icon, index) => (
               <ul key={index} className="px-2 py-4">
-                <li className="opacity-50 duration-300 hover:opacity-100">
-                  {icon}
+                <li className="flex flex-col items-center text-center text-xs opacity-50 duration-300 hover:opacity-100 sm:text-sm lg:text-base">
+                  <div> {icon.icon}</div>
+                  <p> {icon.techName}</p>
                 </li>
               </ul>
             ))}
           </div>
 
-          <div className="mt-4 flex flex-wrap">
+          <div className="mt-4 flex cursor-pointer flex-wrap">
             {mobileFlutterIcon.map((icon, index) => (
               <ul key={index} className="px-2 py-4">
-                <li className="opacity-50 duration-300 hover:opacity-100">
-                  {icon}
+                <li className="flex flex-col items-center text-center text-xs opacity-50 duration-300 hover:opacity-100 sm:text-sm lg:text-base">
+                  <div> {icon.icon}</div>
+                  <p> {icon.techName}</p>
                 </li>
               </ul>
             ))}
@@ -66,11 +70,12 @@ function Technologies() {
         </div>
         <div className="p-2 sm:p-6 lg:p-12">
           <span>Development Tools</span>
-          <div className="mt-4 flex flex-wrap">
+          <div className="mt-4 flex cursor-pointer flex-wrap">
             {developmentIcons.map((icon, index) => (
               <ul key={index} className="px-2 py-4">
-                <li className="opacity-50 duration-300 hover:opacity-100">
-                  {icon}
+                <li className="flex flex-col items-center text-center text-xs opacity-50 duration-300 hover:opacity-100 sm:text-sm lg:text-base">
+                  <div> {icon.icon}</div>
+                  <p> {icon.techName}</p>
                 </li>
               </ul>
             ))}

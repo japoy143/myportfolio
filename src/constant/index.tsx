@@ -56,43 +56,109 @@ export const contactIcons: contactIconType[] = [
 const iconStyles = "  h-6 w-6 sm:h-8 sm:w-8 lg:h-10 lg:w-10 ";
 const color = "#FFFFFF";
 
-export const webIcons = [
-  <HtmlIcon className={iconStyles} color={color} />,
-  <CssIcon className={iconStyles} color={color} />,
-  <TailwindcssIcon className={iconStyles} color={color} />,
-  <JavascriptIcon className={iconStyles} color={color} />,
-  <TypescriptIcon className={iconStyles} color={color} />,
-  <ReactIcon className={iconStyles} color={color} />,
-  <NodejsIcon className={iconStyles} color={color} />,
-  <MongoDbIcon className={iconStyles} color={color} />,
+type IconsType = {
+  techName: string;
+  icon: JSX.Element;
+};
+
+export const webIcons: IconsType[] = [
+  { techName: "HTML", icon: <HtmlIcon className={iconStyles} color={color} /> },
+  { techName: "CSS", icon: <CssIcon className={iconStyles} color={color} /> },
+  {
+    techName: "Tailwindcss",
+    icon: <TailwindcssIcon className={iconStyles} color={color} />,
+  },
+  {
+    techName: "Javascript",
+    icon: <JavascriptIcon className={iconStyles} color={color} />,
+  },
+  {
+    techName: "Typescript",
+    icon: <TypescriptIcon className={iconStyles} color={color} />,
+  },
+  {
+    techName: "React",
+    icon: <ReactIcon className={iconStyles} color={color} />,
+  },
+  {
+    techName: "NodeJs",
+    icon: <NodejsIcon className={iconStyles} color={color} />,
+  },
+  {
+    techName: "MongoDB",
+    icon: <MongoDbIcon className={iconStyles} color={color} />,
+  },
 ];
 
-export const designToolsIcon = [
-  <CanvaIcon className={iconStyles} color={color} />,
-  <FigmaIcon className={iconStyles} color={color} />,
-  <div className="h-6 w-6 sm:h-8 sm:w-8 lg:h-10 lg:w-10"></div>,
-  <div className="h-6 w-6 sm:h-8 sm:w-8 lg:h-10 lg:w-10"></div>,
+export const designToolsIcon: IconsType[] = [
+  {
+    techName: "Canva",
+    icon: <CanvaIcon className={iconStyles} color={color} />,
+  },
+  {
+    techName: "Figma",
+    icon: <FigmaIcon className={iconStyles} color={color} />,
+  },
+  {
+    techName: "",
+    icon: <div className="h-6 w-6 sm:h-8 sm:w-8 lg:h-10 lg:w-10"></div>,
+  },
+  {
+    techName: "",
+    icon: <div className="h-6 w-6 sm:h-8 sm:w-8 lg:h-10 lg:w-10"></div>,
+  },
 ];
 
-export const mobileIcons = [
-  <JavascriptIcon className={iconStyles} color={color} />,
-  <TypescriptIcon className={iconStyles} color={color} />,
-  <TailwindcssIcon className={iconStyles} color={color} />,
-  <ExpoIcon className={iconStyles} color={color} />,
-  <NodejsIcon className={iconStyles} color={color} />,
-  <MongoDbIcon className={iconStyles} color={color} />,
+export const mobileIcons: IconsType[] = [
+  {
+    techName: "Javascript",
+    icon: <JavascriptIcon className={iconStyles} color={color} />,
+  },
+  {
+    techName: "Typescript",
+    icon: <TypescriptIcon className={iconStyles} color={color} />,
+  },
+  {
+    techName: "Tailwindcss",
+    icon: <TailwindcssIcon className={iconStyles} color={color} />,
+  },
+  { techName: "Expo", icon: <ExpoIcon className={iconStyles} color={color} /> },
+  {
+    techName: "Nodejs",
+    icon: <NodejsIcon className={iconStyles} color={color} />,
+  },
+  {
+    techName: "MongoDB",
+    icon: <MongoDbIcon className={iconStyles} color={color} />,
+  },
 ];
 
-export const mobileFlutterIcon = [
-  <FlutterIcon className={iconStyles} color={color} />,
-  <DartIcon className={iconStyles} color={color} />,
-  <HiveIcon className={iconStyles} color={color} />,
+export const mobileFlutterIcon: IconsType[] = [
+  {
+    techName: "Flutter",
+    icon: <FlutterIcon className={iconStyles} color={color} />,
+  },
+  { techName: "Dart", icon: <DartIcon className={iconStyles} color={color} /> },
+  { techName: "Hive", icon: <HiveIcon className={iconStyles} color={color} /> },
 ];
 
-export const developmentIcons = [
-  <VscodeIcon className={iconStyles} color={color} />,
-  <PostmanIcon className={iconStyles} color={color} />,
-  <NotionIcon className={iconStyles} color={color} />,
+export const developmentIcons: IconsType[] = [
+  {
+    techName: "Vscode",
+    icon: <VscodeIcon className={iconStyles} color={color} />,
+  },
+  {
+    techName: "Postman",
+    icon: <PostmanIcon className={iconStyles} color={color} />,
+  },
+  {
+    techName: "Notion",
+    icon: <NotionIcon className={iconStyles} color={color} />,
+  },
+  {
+    techName: "",
+    icon: <div className="h-6 w-6 sm:h-8 sm:w-8 lg:h-10 lg:w-10"></div>,
+  },
 ];
 
 type projectAssetsType = {

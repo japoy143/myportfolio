@@ -5,7 +5,7 @@ import StaggerText from "react-stagger-text";
 function Me() {
   return (
     <section className="container mx-auto">
-      <div className="ml-6 flex items-center space-x-8">
+      <div className="ml-6 flex items-center space-x-8 lg:ml-36">
         <div className="h-28 w-28 flex-shrink-0 overflow-hidden rounded-full border border-neutral-700/80 lg:h-40 lg:w-40">
           <img
             src={me}
@@ -35,7 +35,7 @@ function Me() {
           </div>
         </div>
       </div>
-      <div className="sm:text-medium ml-10 max-w-[85%] text-justify indent-2 text-sm opacity-60 md:ml-44 lg:ml-56 lg:max-w-[60%] lg:indent-8 lg:text-xl">
+      <div className="sm:text-medium ml-10 max-w-[85%] text-justify indent-2 text-sm opacity-60 md:ml-44 lg:ml-80 lg:max-w-[60%] lg:indent-8 lg:text-xl">
         <p>
           <StaggerText staggerType="word" startTreshold={1} staggerDuration={2}>
             I've been fascinated by technology and how it functions. I'm
