@@ -41,7 +41,7 @@ function Projects() {
               </span>
             </div>
             <div className="w-full rounded-md border-2 border-neutral-400/80">
-              <img src={item.img} className="object-contain" />
+              <img src={item.img} className="rounded-md object-contain" />
             </div>
             <div className="mt-4 text-justify indent-6">
               <span className="text-sm lg:text-base">
