@@ -10,7 +10,8 @@ function Me() {
           <img
             src={me}
             className="h-full w-full object-cover object-left-top"
-            alt="me"
+            alt="Me"
+            title="Rainier"
           />
         </div>
         <div className="max-w-[75%] flex-col py-10 lg:max-w-[60%]">
@@ -21,12 +22,15 @@ function Me() {
           </span>
           <div className="mt-4 flex items-center space-x-2">
             {contactIcons.map((icons, index) => (
-              <div
+              <a
                 key={index}
                 className="opacity-40 duration-300 hover:opacity-100"
+                href={icons.href}
+                target="_blank"
+                title={icons.title}
               >
-                {icons}
-              </div>
+                {icons.icon}
+              </a>
             ))}
           </div>
         </div>

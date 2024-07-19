@@ -29,10 +29,28 @@ export const navItems = [
 
 const contactIconStyles = "h-8 w-8 sm:h-10 sm:w-10  lg:w-12 lg:h-12";
 
-export const contactIcons = [
-  <GithubIcon className={contactIconStyles} />,
-  <LinkedinIcon className={contactIconStyles} />,
-  <GmailIcon className={contactIconStyles} />,
+type contactIconType = {
+  href: string;
+  icon: JSX.Element;
+  title: string;
+};
+
+export const contactIcons: contactIconType[] = [
+  {
+    href: "https://github.com/japoy143",
+    title: "Github",
+    icon: <GithubIcon className={contactIconStyles} />,
+  },
+  {
+    href: "https://www.linkedin.com/in/rainierlesondato/",
+    title: "LinkedIn",
+    icon: <LinkedinIcon className={contactIconStyles} />,
+  },
+  {
+    href: "https://mail.google.com",
+    title: "rainierlesondato143@gmail.com",
+    icon: <GmailIcon className={contactIconStyles} />,
+  },
 ];
 
 const iconStyles = "  h-6 w-6 sm:h-8 sm:w-8 lg:h-10 lg:w-10 ";
@@ -80,6 +98,7 @@ export const developmentIcons = [
 type projectAssetsType = {
   title: string;
   img: string;
+  imgTitle: string;
   description: string;
   keywords: string[];
   view: string;
@@ -91,6 +110,7 @@ export const projectAssets: projectAssetsType[] = [
   {
     title: "WORDYWOODPICKER APP",
     img: wordyImage,
+    imgTitle: "WORDYWOODPICKER APP",
     description:
       "The WORDYWOODPICKER game app is about Computer word guessing game that you have to guess a computer related word from the given randomize set of letters. The game app is created with the following technologies Flutter, Dart for the frontend and  Hive for the backend. ",
     keywords: ["Flutter", "Dart", "Hive"],
@@ -102,6 +122,7 @@ export const projectAssets: projectAssetsType[] = [
   {
     title: "API HUNT",
     img: apihuntImage,
+    imgTitle: "API HUNT",
     description:
       "The API Hunt is a web app that you can browse free api`s for your next projects. The web app is created with the following technologies React, Typescript and Tailwindcss for the frontend.  Nodejs, Express and Mongo Db for the backend.",
     keywords: [
@@ -119,6 +140,7 @@ export const projectAssets: projectAssetsType[] = [
   {
     title: "NETCOIN APP",
     img: netcoinImage,
+    imgTitle: "NETCOIN APP",
     description:
       "The Netcoin app is a crypto currency app that will show real-time prices. The app can be use to convert crypto currency value to dollar prices. The app has statistics also for the 24 hour changes of the price. The  Netcoin app is created with the following technologies React Native, Expo, Typescript and Tailwindcss for the frontend and Nodejs, Express and Mongo Db for the backend.",
     keywords: [
