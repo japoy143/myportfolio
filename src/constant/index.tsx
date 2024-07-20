@@ -199,7 +199,7 @@ export const projectAssets: projectAssetsType[] = [
       "Express",
       "Mongo Db",
     ],
-    view: "https://api-hunt.onrender.com",
+    view: "https://vercel-api-hunt-y8ha.vercel.app",
     viewType: "View Live Site",
     githubUrl: "https://github.com/japoy143/api_hunt.git",
   },
