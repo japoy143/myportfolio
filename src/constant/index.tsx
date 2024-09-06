@@ -21,6 +21,7 @@ import HiveIcon from "../assets/technologies/Hive";
 import apihuntImage from "../assets/projects/apihunt.png";
 import wordyImage from "../assets/projects/wordy.png";
 import netcoinImage from "../assets/projects/netcoin.png";
+import citeCodeImage from "../assets/projects/citecode.png";
 
 export const navItems = [
   { label: "Technologies", href: "#technologies" },
@@ -174,6 +175,18 @@ type projectAssetsType = {
 
 export const projectAssets: projectAssetsType[] = [
   {
+    title: "CITECODE",
+    img: citeCodeImage,
+    imgTitle: "CITECODE APP",
+    description:
+      "A Student Attendance Application using qr code to scan and verify students who attended in the event. The application works online and offline  by caching the data.The application is created in Flutter and Dart for the Front-end. Hive, Supabase as a Restful API and Back-end. ",
+    keywords: ["Flutter", "Dart", "Hive", "Supabase"],
+
+    view: "",
+    viewType: "",
+    githubUrl: "https://github.com/japoy143/qr-app.git",
+  },
+  {
     title: "WORDYWOODPICKER APP",
     img: wordyImage,
     imgTitle: "WORDYWOODPICKER APP",
@@ -195,7 +208,7 @@ export const projectAssets: projectAssetsType[] = [
       "React",
       "Typescript",
       "Tailwindcss",
-      "NodeJs",
+      "Nodejs",
       "Express",
       "Mongo Db",
     ],
@@ -213,7 +226,7 @@ export const projectAssets: projectAssetsType[] = [
       "React Native",
       "Expo",
       "Typescript",
-      "NodeJs",
+      "Nodejs",
       "Express",
       "Mongo Db",
     ],
